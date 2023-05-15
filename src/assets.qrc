@@ -1,0 +1,87 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/DayItem.qml</file>
+        <file>qml/AreaFlick.qml</file>
+        <file>assets/video_tab_icon.svg</file>
+        <file>assets/appicon.icns</file>
+        <file alias="general_settings.png">assets/general_settings.png</file>
+        <file alias="weather/0.png">assets/Glance/0.png</file>
+        <file alias="weather/10.png">assets/Glance/10.png</file>
+        <file alias="weather/11.png">assets/Glance/11.png</file>
+        <file alias="weather/12.png">assets/Glance/12.png</file>
+        <file alias="weather/13.png">assets/Glance/13.png</file>
+        <file alias="weather/14.png">assets/Glance/14.png</file>
+        <file alias="weather/15.png">assets/Glance/15.png</file>
+        <file alias="weather/16.png">assets/Glance/16.png</file>
+        <file alias="weather/17.png">assets/Glance/17.png</file>
+        <file alias="weather/18.png">assets/Glance/18.png</file>
+        <file alias="weather/19.png">assets/Glance/19.png</file>
+        <file alias="weather/1.png">assets/Glance/1.png</file>
+        <file alias="weather/20.png">assets/Glance/20.png</file>
+        <file alias="weather/21.png">assets/Glance/21.png</file>
+        <file alias="weather/22.png">assets/Glance/22.png</file>
+        <file alias="weather/23.png">assets/Glance/23.png</file>
+        <file alias="weather/24.png">assets/Glance/24.png</file>
+        <file alias="weather/25.png">assets/Glance/25.png</file>
+        <file alias="weather/26.png">assets/Glance/26.png</file>
+        <file alias="weather/27.png">assets/Glance/27.png</file>
+        <file alias="weather/28.png">assets/Glance/28.png</file>
+        <file alias="weather/29.png">assets/Glance/29.png</file>
+        <file alias="weather/2.png">assets/Glance/2.png</file>
+        <file alias="weather/30.png">assets/Glance/30.png</file>
+        <file alias="weather/31.png">assets/Glance/31.png</file>
+        <file alias="weather/32.png">assets/Glance/32.png</file>
+        <file alias="weather/33.png">assets/Glance/33.png</file>
+        <file alias="weather/34.png">assets/Glance/34.png</file>
+        <file alias="weather/35.png">assets/Glance/35.png</file>
+        <file alias="weather/36.png">assets/Glance/36.png</file>
+        <file alias="weather/37.png">assets/Glance/37.png</file>
+        <file alias="weather/38.png">assets/Glance/38.png</file>
+        <file alias="weather/39.png">assets/Glance/39.png</file>
+        <file alias="weather/3.png">assets/Glance/3.png</file>
+        <file alias="weather/40.png">assets/Glance/40.png</file>
+        <file alias="weather/41.png">assets/Glance/41.png</file>
+        <file alias="weather/42.png">assets/Glance/42.png</file>
+        <file alias="weather/43.png">assets/Glance/43.png</file>
+        <file alias="weather/44a.png">assets/Glance/44a.png</file>
+        <file alias="weather/44.png">assets/Glance/44.png</file>
+        <file alias="weather/45.png">assets/Glance/45.png</file>
+        <file alias="weather/46.png">assets/Glance/46.png</file>
+        <file alias="weather/47.png">assets/Glance/47.png</file>
+        <file alias="weather/48.png">assets/Glance/48.png</file>
+        <file alias="weather/4.png">assets/Glance/4.png</file>
+        <file alias="weather/5.png">assets/Glance/5.png</file>
+        <file alias="weather/6.png">assets/Glance/6.png</file>
+        <file alias="weather/7.png">assets/Glance/7.png</file>
+        <file alias="weather/8.png">assets/Glance/8.png</file>
+        <file alias="weather/9.png">assets/Glance/9.png</file>
+        <file alias="weather/dark_cloud.png">assets/Glance/dark_cloud.png</file>
+        <file alias="weather/dropice.png">assets/Glance/dropice.png</file>
+        <file alias="weather/drop.png">assets/Glance/drop.png</file>
+        <file alias="weather/dust.png">assets/Glance/dust.png</file>
+        <file alias="weather/fog.png">assets/Glance/fog.png</file>
+        <file alias="weather/fulllight.png">assets/Glance/fulllight.png</file>
+        <file alias="weather/gray_cloud.png">assets/Glance/gray_cloud.png</file>
+        <file alias="weather/haze.png">assets/Glance/haze.png</file>
+        <file alias="weather/hotsun.png">assets/Glance/hotsun.png</file>
+        <file alias="weather/ice_cloud.png">assets/Glance/ice_cloud.png</file>
+        <file alias="weather/iceshatter.png">assets/Glance/iceshatter.png</file>
+        <file alias="weather/light_cloud.png">assets/Glance/light_cloud.png</file>
+        <file alias="weather/light.png">assets/Glance/light.png</file>
+        <file alias="weather/medium_gray_cloud.png">assets/Glance/medium_gray_cloud.png</file>
+        <file alias="weather/moon4.png">assets/Glance/moon4.png</file>
+        <file alias="weather/na.png">assets/Glance/na.png</file>
+        <file alias="weather/shatter.png">assets/Glance/shatter.png</file>
+        <file alias="weather/small_gray_cloud.png">assets/Glance/small_gray_cloud.png</file>
+        <file alias="weather/smoke.png">assets/Glance/smoke.png</file>
+        <file alias="weather/snowflake_light.png">assets/Glance/snowflake_light.png</file>
+        <file alias="weather/snowflake.png">assets/Glance/snowflake.png</file>
+        <file alias="weather/sun.png">assets/Glance/sun.png</file>
+        <file alias="weather/transparency_cloud.png">assets/Glance/transparency_cloud.png</file>
+        <file alias="weather/two_gray_cloud.png">assets/Glance/two_gray_cloud.png</file>
+        <file alias="weather/two_gray_clouds.png">assets/Glance/two_gray_clouds.png</file>
+        <file alias="weather/two_light_clouds.png">assets/Glance/two_light_clouds.png</file>
+        <file alias="weather/wind.png">assets/Glance/wind.png</file>
+    </qresource>
+</RCC>
