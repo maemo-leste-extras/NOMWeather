@@ -28,11 +28,10 @@ Vcs-Browser: https://github.com/maemo-leste-extras/nomweather/
 Package: nomweather
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-    libssl-dev,
+    libssl1.1,
     libqt5quickcontrols2-5,
-    qtmultimedia5-dev,
     libqt5network5,
-    libqt5charts5-dev,
+    libqt5charts5,
     qml-module-qtcharts,
     qml-module-qtquick-controls2,
     qml-module-qtquick2,
