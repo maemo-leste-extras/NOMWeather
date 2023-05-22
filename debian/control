@@ -42,3 +42,4 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
     qml-module-qtquick-dialogs,
     qml-module-qtquick-controls
 Description: Maemo Leste weather forecast app
+XB-Maemo-Display-Name: Maemo Weather

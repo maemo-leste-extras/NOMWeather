@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(nomweather
-        VERSION 0.1.2
+        VERSION 0.1.3
         DESCRIPTION "Maemo Leste weather forecast app"
         HOMEPAGE_URL https://github.com/maemo-leste-extras/nomweather
         LANGUAGES CXX C
