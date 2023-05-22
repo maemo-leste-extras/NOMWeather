@@ -1,3 +1,9 @@
+nomweather (0.1.6) unstable; urgency=medium
+
+  * Remove debug URLs
+
+ -- Sander <sander@kroket.io>  Sat, 22 May 2021 20:33:36 +0100
+
 nomweather (0.1.5) unstable; urgency=medium
 
   * packaging: set MAEMO CMake define

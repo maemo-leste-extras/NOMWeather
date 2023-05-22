@@ -28,7 +28,6 @@ void OpenMeteo::onLocationUpdated(const QString &_name, const QString &_country,
   this->lon = _lon;
 
   auto url = QString("https://api.open-meteo.com/v1/forecast?latitude=%1&longitude=%2&hourly=temperature_2m,precipitation_probability,weathercode,windspeed_10m").arg(lat, lon);
-  //auto url = QString("http://141.95.1.233/weather");
   m_httpData->get(url);
 }
 
@@ -67,8 +66,7 @@ void OpenMeteo::getWeather() {
 void OpenMeteo::getLatLonViaNetwork() {
   emit statusUpdate("Fetching lat/lon");
 
-  // auto url = QString("http://ip-api.com/json");
-  auto url = QString("http://141.95.1.233/json");
+  auto url = QString("http://ip-api.com/json");
   m_httpIpv4toLatLon->get(url);
 }
 
