@@ -6,7 +6,7 @@ NOMWeather (not open maemo weather) fetches weather data from Open-Meteo.com (FO
 - Temperature in celcius or fahrenheit
 - 7-day forecast 
 - Optional wind data (km/h) and precipitation
-- Qt 17, CMake, CCache
+- Qt 5.15, CMake, CCache
 - QtWidgets & QtQuick
 
 The application is called **not** open maemo weather because during development people kept referring to OMWeather (a legacy maemo application).
