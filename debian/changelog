@@ -1,3 +1,9 @@
+nomweather (0.1.4) unstable; urgency=medium
+
+  * packacing: actually install to /usr/bin/
+
+ -- Sander <sander@kroket.io>  Sat, 22 May 2021 20:33:36 +0100
+
 nomweather (0.1.3) unstable; urgency=medium
 
   * Try to add weather to desktop icons

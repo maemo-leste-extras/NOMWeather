@@ -137,5 +137,5 @@ if(APPLE)
 endif()
 
 install(TARGETS nomweather
-        DESTINATION ${CMAKE_INSTALL_PREFIX}
+        DESTINATION bin
         )
