@@ -1,3 +1,9 @@
+nomweather (0.1.5) unstable; urgency=medium
+
+  * packaging: set MAEMO CMake define
+
+ -- Sander <sander@kroket.io>  Sat, 22 May 2021 20:33:36 +0100
+
 nomweather (0.1.4) unstable; urgency=medium
 
   * packacing: actually install to /usr/bin/
