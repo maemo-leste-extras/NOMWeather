@@ -1,3 +1,9 @@
+nomweather (0.1.2) unstable; urgency=medium
+
+  * Fix packaging 2.0 >_<
+
+ -- Sander <sander@kroket.io>  Sat, 22 May 2021 20:33:36 +0100
+
 nomweather (0.1.1) unstable; urgency=medium
 
   * Fix packaging

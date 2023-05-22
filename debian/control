@@ -9,6 +9,7 @@ Build-Depends: debhelper (>= 10),
     libx11-dev,
     zlib1g-dev,
     libpng-dev,
+    libssl-dev,
     libqt5svg5-dev,
     libqt5maemo5-dev,
     libqt5x11extras5-dev,
@@ -27,6 +28,7 @@ Vcs-Browser: https://github.com/maemo-leste-extras/nomweather/
 Package: nomweather
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
+    libssl-dev,
     libqt5quickcontrols2-5,
     qtmultimedia5-dev,
     libqt5network5,
