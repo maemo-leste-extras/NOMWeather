@@ -160,115 +160,115 @@ Flickable {
                 anchors.fill: parent
                 z: parent.z + 2
 
-                Text { id: dynamicTextObject3; color: "white"; z: 999; y: 0; x: 92.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject3; color: "white"; z: 999; y: 0; x: 92.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject3; x: 92.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject6; color: "white"; z: 999; y: 0; x: 201.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject6; color: "white"; z: 999; y: 0; x: 201.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject6; x: 201.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject9; color: "white"; z: 999; y: 0; x: 310.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject9; color: "white"; z: 999; y: 0; x: 310.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject9; x: 310.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject12; color: "white"; z: 999; y: 0; x: 419.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject12; color: "white"; z: 999; y: 0; x: 419.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject12; x: 419.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject15; color: "white"; z: 999; y: 0; x: 527.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject15; color: "white"; z: 999; y: 0; x: 527.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject15; x: 527.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject18; color: "white"; z: 999; y: 0; x: 636.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject18; color: "white"; z: 999; y: 0; x: 636.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject18; x: 636.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject21; color: "white"; z: 999; y: 0; x: 745.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject21; color: "white"; z: 999; y: 0; x: 745.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject21; x: 745.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject24; color: "white"; z: 999; y: 0; x: 854.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject24; color: "white"; z: 999; y: 0; x: 854.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject24; x: 854.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject27; color: "white"; z: 999; y: 0; x: 962.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject27; color: "white"; z: 999; y: 0; x: 962.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject27; x: 962.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject30; color: "white"; z: 999; y: 0; x: 1071.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject30; color: "white"; z: 999; y: 0; x: 1071.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject30; x: 1071.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject33; color: "white"; z: 999; y: 0; x: 1180.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject33; color: "white"; z: 999; y: 0; x: 1180.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject33; x: 1180.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject36; color: "white"; z: 999; y: 0; x: 1289.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject36; color: "white"; z: 999; y: 0; x: 1289.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject36; x: 1289.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject39; color: "white"; z: 999; y: 0; x: 1397.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject39; color: "white"; z: 999; y: 0; x: 1397.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject39; x: 1397.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject42; color: "white"; z: 999; y: 0; x: 1506.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject42; color: "white"; z: 999; y: 0; x: 1506.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject42; x: 1506.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject45; color: "white"; z: 999; y: 0; x: 1615.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject45; color: "white"; z: 999; y: 0; x: 1615.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject45; x: 1615.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject48; color: "white"; z: 999; y: 0; x: 1724.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject48; color: "white"; z: 999; y: 0; x: 1724.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject48; x: 1724.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject51; color: "white"; z: 999; y: 0; x: 1832.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject51; color: "white"; z: 999; y: 0; x: 1832.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject51; x: 1832.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject54; color: "white"; z: 999; y: 0; x: 1941.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject54; color: "white"; z: 999; y: 0; x: 1941.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject54; x: 1941.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject57; color: "white"; z: 999; y: 0; x: 2050.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject57; color: "white"; z: 999; y: 0; x: 2050.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject57; x: 2050.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject60; color: "white"; z: 999; y: 0; x: 2159.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject60; color: "white"; z: 999; y: 0; x: 2159.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject60; x: 2159.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject63; color: "white"; z: 999; y: 0; x: 2267.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject63; color: "white"; z: 999; y: 0; x: 2267.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject63; x: 2267.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject66; color: "white"; z: 999; y: 0; x: 2376.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject66; color: "white"; z: 999; y: 0; x: 2376.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject66; x: 2376.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject69; color: "white"; z: 999; y: 0; x: 2485.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject69; color: "white"; z: 999; y: 0; x: 2485.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject69; x: 2485.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject72; color: "white"; z: 999; y: 0; x: 2594.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject72; color: "white"; z: 999; y: 0; x: 2594.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject72; x: 2594.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject75; color: "white"; z: 999; y: 0; x: 2702.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject75; color: "white"; z: 999; y: 0; x: 2702.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject75; x: 2702.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject78; color: "white"; z: 999; y: 0; x: 2811.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject78; color: "white"; z: 999; y: 0; x: 2811.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject78; x: 2811.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject81; color: "white"; z: 999; y: 0; x: 2920.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject81; color: "white"; z: 999; y: 0; x: 2920.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject81; x: 2920.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject84; color: "white"; z: 999; y: 0; x: 3029.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject84; color: "white"; z: 999; y: 0; x: 3029.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject84; x: 3029.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject87; color: "white"; z: 999; y: 0; x: 3137.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject87; color: "white"; z: 999; y: 0; x: 3137.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject87; x: 3137.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject90; color: "white"; z: 999; y: 0; x: 3246.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject90; color: "white"; z: 999; y: 0; x: 3246.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject90; x: 3246.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject93; color: "white"; z: 999; y: 0; x: 3355.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject93; color: "white"; z: 999; y: 0; x: 3355.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject93; x: 3355.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject96; color: "white"; z: 999; y: 0; x: 3464.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject96; color: "white"; z: 999; y: 0; x: 3464.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject96; x: 3464.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject99; color: "white"; z: 999; y: 0; x: 3572.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject99; color: "white"; z: 999; y: 0; x: 3572.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject99; x: 3572.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject102; color: "white"; z: 999; y: 0; x: 3681.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject102; color: "white"; z: 999; y: 0; x: 3681.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject102; x: 3681.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject105; color: "white"; z: 999; y: 0; x: 3790.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject105; color: "white"; z: 999; y: 0; x: 3790.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject105; x: 3790.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject108; color: "white"; z: 999; y: 0; x: 3899.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject108; color: "white"; z: 999; y: 0; x: 3899.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject108; x: 3899.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject111; color: "white"; z: 999; y: 0; x: 4007.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject111; color: "white"; z: 999; y: 0; x: 4007.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject111; x: 4007.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject114; color: "white"; z: 999; y: 0; x: 4116.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject114; color: "white"; z: 999; y: 0; x: 4116.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject114; x: 4116.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject117; color: "white"; z: 999; y: 0; x: 4225.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject117; color: "white"; z: 999; y: 0; x: 4225.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject117; x: 4225.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject120; color: "white"; z: 999; y: 0; x: 4334.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject120; color: "white"; z: 999; y: 0; x: 4334.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject120; x: 4334.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject123; color: "white"; z: 999; y: 0; x: 4442.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject123; color: "white"; z: 999; y: 0; x: 4442.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject123; x: 4442.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject126; color: "white"; z: 999; y: 0; x: 4551.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject126; color: "white"; z: 999; y: 0; x: 4551.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject126; x: 4551.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject129; color: "white"; z: 999; y: 0; x: 4660.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject129; color: "white"; z: 999; y: 0; x: 4660.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject129; x: 4660.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject132; color: "white"; z: 999; y: 0; x: 4769.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject132; color: "white"; z: 999; y: 0; x: 4769.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject132; x: 4769.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject135; color: "white"; z: 999; y: 0; x: 4877.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject135; color: "white"; z: 999; y: 0; x: 4877.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject135; x: 4877.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject138; color: "white"; z: 999; y: 0; x: 4986.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject138; color: "white"; z: 999; y: 0; x: 4986.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject138; x: 4986.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject141; color: "white"; z: 999; y: 0; x: 5095.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject141; color: "white"; z: 999; y: 0; x: 5095.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject141; x: 5095.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject144; color: "white"; z: 999; y: 0; x: 5204.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject144; color: "white"; z: 999; y: 0; x: 5204.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject144; x: 5204.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject147; color: "white"; z: 999; y: 0; x: 5312.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject147; color: "white"; z: 999; y: 0; x: 5312.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject147; x: 5312.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject150; color: "white"; z: 999; y: 0; x: 5421.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject150; color: "white"; z: 999; y: 0; x: 5421.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject150; x: 5421.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject153; color: "white"; z: 999; y: 0; x: 5530.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject153; color: "white"; z: 999; y: 0; x: 5530.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject153; x: 5530.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject156; color: "white"; z: 999; y: 0; x: 5639.0; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject156; color: "white"; z: 999; y: 0; x: 5639.0; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject156; x: 5639.0; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject159; color: "white"; z: 999; y: 0; x: 5747.75; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject159; color: "white"; z: 999; y: 0; x: 5747.75; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject159; x: 5747.75; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject162; color: "white"; z: 999; y: 0; x: 5856.5; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject162; color: "white"; z: 999; y: 0; x: 5856.5; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject162; x: 5856.5; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
-                Text { id: dynamicTextObject165; color: "white"; z: 999; y: 0; x: 5965.25; font.bold: false; font.pointSize: 20; text: "5";}
+                Text { id: dynamicTextObject165; color: "white"; z: 999; y: 0; x: 5965.25; font.bold: false; font.pointSize: 20; text: "";}
                 Text { id: dynamicTextDateObject165; x: 5965.25; y: 104; font.bold: false; font.pointSize: 18; text: ""; color: "grey";}
 
                 Component.onCompleted: {

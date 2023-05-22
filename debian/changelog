@@ -1,3 +1,9 @@
+nomweather (0.1.8) unstable; urgency=medium
+
+  * QML: Remove '5' debug text from initial graph text value
+
+ -- Sander <sander@kroket.io>  Sat, 22 May 2021 20:33:36 +0100
+
 nomweather (0.1.7) unstable; urgency=medium
 
   * Remove dev libs from runtime depends
