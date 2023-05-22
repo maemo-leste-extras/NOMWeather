@@ -3,10 +3,6 @@
 #include <QtCore>
 #include <QSslSocket>
 
-#if defined(Q_OS_WIN)
-#include <windows.h>
-#endif
-
 #if defined(Q_OS_LINUX) && defined(STATIC)
 Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
 #endif
@@ -21,7 +17,7 @@ int main(int argc, char *argv[]) {
 
   qputenv("QML_DISABLE_DISK_CACHE", "1");
   QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-  QApplication::setApplicationName("hello");
+  QApplication::setApplicationName("nomweather");
   QApplication::setOrganizationDomain("kroket.io");
   QApplication::setOrganizationName("Kroket Ltd.");
   QApplication app(argc, argv);

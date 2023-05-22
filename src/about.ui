@@ -69,7 +69,7 @@
           <property name="text">
            <string>NOMWeather (not open maemo weather) fetches weather data from Open-Meteo.com (FOSS Weather API) and uses IP-API.com for lat/lon discovery via network.
 
-The application is called &quot;not&quot; open maemo weather because during development everyone kept referring to OMWeather (a legacy maemo application).</string>
+The application is called &quot;not&quot; open maemo weather because during development people kept referring to OMWeather (a legacy maemo application).</string>
           </property>
           <property name="wordWrap">
            <bool>true</bool>

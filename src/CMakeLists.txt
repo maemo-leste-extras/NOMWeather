@@ -31,14 +31,14 @@ if(APPLE)
     list(APPEND RESOURCES ${ICON})
 endif()
 
-add_executable(hello ${EXECUTABLE_FLAG} main.cpp
+add_executable(nomweather ${EXECUTABLE_FLAG} main.cpp
         ${SOURCE_FILES}
         ${RESOURCES}
         )
 
 # Mac OS bundle
 if(APPLE)
-    set_target_properties(hello PROPERTIES
+    set_target_properties(nomweather PROPERTIES
             RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
             MACOSX_BUNDLE TRUE
             MACOSX_BUNDLE_INFO_PLIST "${CMAKE_SOURCE_DIR}/utils/Info.plist"
@@ -46,11 +46,11 @@ if(APPLE)
             )
 endif()
 
-set_property(TARGET hello PROPERTY RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+set_property(TARGET nomweather PROPERTY RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
-target_include_directories(hello PUBLIC ${Qt5Gui_PRIVATE_INCLUDE_DIRS})
+target_include_directories(nomweather PUBLIC ${Qt5Gui_PRIVATE_INCLUDE_DIRS})
 
-target_include_directories(hello PUBLIC
+target_include_directories(nomweather PUBLIC
         ${CMAKE_SOURCE_DIR}/src
         ${X11_INCLUDE_DIR}
         ${OPENSSL_INCLUDE_DIR}
@@ -71,15 +71,15 @@ if(NOT "${CMAKE_BUILD_TYPE}" EQUAL "Debug")
 endif()
 
 if(${CMAKE_BUILD_TYPE} STREQUAL Debug)
-    target_compile_definitions(hello PRIVATE DEBUG=1)
+    target_compile_definitions(nomweather PRIVATE DEBUG=1)
 endif()
 
 if(MAEMO)
     # @TODO: should not be necessary, but definition `Q_WS_MAEMO` is *not* available via CMake
-    target_compile_definitions(hello PRIVATE MAEMO=1)
+    target_compile_definitions(nomweather PRIVATE MAEMO=1)
 endif()
 
-target_compile_definitions(hello
+target_compile_definitions(nomweather
         PUBLIC
         ${Qt5Core_DEFINITIONS}
         ${Qt5Widgets_DEFINITIONS}
@@ -92,7 +92,7 @@ target_compile_definitions(hello
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
 
-target_link_libraries(hello PUBLIC
+target_link_libraries(nomweather PUBLIC
         ${OPENSSL_LIBRARIES}
         ${CMAKE_DL_LIBS}
         Qt5::Core
@@ -112,30 +112,30 @@ target_link_libraries(hello PUBLIC
 )
 
 if(NOT APPLE)
-    target_link_libraries(hello PUBLIC
+    target_link_libraries(nomweather PUBLIC
             Qt5::QSvgIconPlugin
             Qt5::QSvgPlugin
             )
 endif()
 
 if(STATIC)
-    target_link_libraries(hello PUBLIC
+    target_link_libraries(nomweather PUBLIC
             Qt5::QSvgIconPlugin
             Qt5::QSvgPlugin)
     if(UNIX AND NOT APPLE)
-        target_link_libraries(hello PUBLIC
+        target_link_libraries(nomweather PUBLIC
                 Qt5::QXcbIntegrationPlugin)
     endif()
 endif()
 
 if(X11_FOUND)
-    target_link_libraries(hello PUBLIC ${X11_LIBRARIES})
+    target_link_libraries(nomweather PUBLIC ${X11_LIBRARIES})
 endif()
 
 if(APPLE)
     include(Deploy)
 endif()
 
-install(TARGETS hello
+install(TARGETS nomweather
         DESTINATION ${CMAKE_INSTALL_PREFIX}
         )

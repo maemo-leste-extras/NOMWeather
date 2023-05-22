@@ -1,35 +1,45 @@
 ## NOMWeather
 
-e
+NOMWeather (not open maemo weather) fetches weather data from Open-Meteo.com (FOSS Weather API) and uses IP-API.com for lat/lon discovery via network.
 
+- Supports most locations on the planet
+- Temperature in celcius or fahrenheit
+- 7-day forecast 
+- Optional wind data (km/h) and precipitation
 - Qt 17, CMake, CCache
 - QtWidgets & QtQuick
-- Main and About window
-- Embedded Qt resource (QRC) 
-- static utils class
-- Config directory + config file
 
-See also:
+The application is called **not** open maemo weather because during development people kept referring to OMWeather (a legacy maemo application).
 
-- Qt5 QtWidgets template: [qt5-widgets-cmake-hello-world](https://github.com/kroketio/qt5-widgets-cmake-hello-world)
-- Qt5 QML template: [qt5-qml-cmake-hello-world](https://github.com/kroketio/qt5-qml-cmake-hello-world)
-- Qt5 Widgets + QML template (this): [qt5-widgets-qml-cmake-hello-world](https://github.com/kroketio/qt5-widgets-qml-cmake-hello-world)
+![https://i.imgur.com/AwqiVGy.jpg](https://i.imgur.com/AwqiVGy.jpg)
 
-### Installation (Linux / Mac OS)
+### Repository
 
-To build, run:
+On Maemo Leste, `nomweather` is availabe as a package in the repository:
+
+```bash
+sudo apt install -y nomweather
+```
+
+It registers a startup item and can be launched from the menu.
+
+### Compile
+
+The following command assumes you satisfy the Qt5 depedencies neccesary:
 
 ```text
 cmake -Bbuild .
-make -Cbuild -j4
+make -Cbuild -j2
+./build/bin/nomweather
 ```
 
-And if you have Qt installed in a custom directory, use this CMake command instead:
+### Notes
 
-```text
-cmake -DCMAKE_PREFIX_PATH="/home/user/qt5.15/gcc_64" -Bbuild .
-```
-
-`Image by pch.vector`
-
-Which will produce the dynamically linked executable `build/bin/hello`
+- Would be nice to support desktop widgets (like OMWeather). Currently unclear how to do this in a preferably Qt-oriented manner.
+- When supporting desktop widgets, probably best to encapsulate this app's business logic (fetching of API data) in a daemon so both GUI (QtQuick) and the widgets can use that.
+- This application works fine on desktop too (e.g: Ubuntu), the fonts are a bit big though.
+- There is a config file located at `~/.config/nomweather/settings.json` where it saves user preferences.
+- Currently only supports landscape mode
+- Loading the graph takes 100ms on droid4, should be fine on n900 too.
+- This application was made fast and 'shortcuts' were taken in the QML code.
+- Possible to-do: QML theming

@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
-project(hello)
+project(nomweather
+        VERSION 0.1
+        DESCRIPTION "Maemo Leste weather forecast app"
+        HOMEPAGE_URL https://github.com/maemo-leste-extras/nomweather
+        LANGUAGES CXX C
+        )
 message(STATUS "Initiating compile using CMake ${CMAKE_VERSION}")
 
 option(STATIC "Link libraries statically, requires static Qt")
@@ -50,3 +55,6 @@ endif()
 find_package(Threads REQUIRED)
 
 add_subdirectory(src)
+
+set(NOMWEATHER_DESKTOP_DIR /usr/share/applications/hildon)
+add_subdirectory(desktop)

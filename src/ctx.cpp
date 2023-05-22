@@ -32,6 +32,7 @@ AppContext::AppContext() {
   connect(m_weatherTimer, &QTimer::timeout, this, &AppContext::onWeatherTimer);
   m_weatherTimer->setInterval(1000 * 2);
   m_weatherTimer->start();
+  this->onWeatherTimer();
 }
 
 void AppContext::onWeatherUpdated() {
