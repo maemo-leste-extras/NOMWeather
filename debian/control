@@ -1,5 +1,5 @@
 Source: nomweather
-Section: x11
+Section: user/navigation
 Priority: extra
 Maintainer: Sander <sander@kroket.io>
 Build-Depends: debhelper (>= 10),
