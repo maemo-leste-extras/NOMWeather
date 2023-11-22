@@ -61,6 +61,7 @@ void MainWindow::closeEvent(QCloseEvent *event) {
 void MainWindow::createQml() {
   if(m_quickWidget != nullptr) return;
   m_quickWidget = new QQuickWidget(this);
+  m_quickWidget->setAttribute(Qt::WA_AlwaysStackOnTop);
 
   auto *qctx = m_quickWidget->rootContext();
   qctx->setContextProperty("cfg", config());
