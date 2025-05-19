@@ -53,7 +53,6 @@ target_include_directories(nomweather PUBLIC ${Qt5Gui_PRIVATE_INCLUDE_DIRS})
 target_include_directories(nomweather PUBLIC
         ${CMAKE_SOURCE_DIR}/src
         ${X11_INCLUDE_DIR}
-        ${OPENSSL_INCLUDE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${Qt5Core_INCLUDE_DIRS}
         ${Qt5Widgets_INCLUDE_DIRS}
@@ -93,7 +92,6 @@ target_compile_definitions(nomweather
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
 
 target_link_libraries(nomweather PUBLIC
-        ${OPENSSL_LIBRARIES}
         ${CMAKE_DL_LIBS}
         Qt5::Core
         Qt5::Widgets
