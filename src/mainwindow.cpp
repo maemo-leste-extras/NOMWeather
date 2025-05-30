@@ -26,6 +26,7 @@ MainWindow::MainWindow(AppContext *ctx, QWidget *parent) :
 
   // example set config value
   // config()->set(ConfigKeys::Test, "test2");
+  setProperty("X-Maemo-Orientation", 2);
 
   this->createQml();
   this->show();

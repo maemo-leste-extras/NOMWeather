@@ -1,9 +1,14 @@
+nomweather (0.2.1) unstable; urgency=medium
+
+  * window: allow portrait
+
+ -- Sander <sander@kroket.io>  Tue, 30 May 2025 23:19:36 +0300
+
 nomweather (0.2.0) unstable; urgency=medium
 
   * cmake/debian: remove OpenSSL, include pkg-config
 
  -- Sander <sander@kroket.io>  Tue, 19 May 2025 19:40:36 +0300
-
 
 nomweather (0.1.9) unstable; urgency=medium
 

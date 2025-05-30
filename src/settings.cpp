@@ -23,10 +23,9 @@ Settings::Settings(AppContext *ctx, QWidget *parent) :
   ui->setupUi(this);
   ui->cityLabel->hide();
 
-//#ifdef MAEMO
 //  setProperty("X-Maemo-StackedWindow", 1);
-//  setProperty("X-Maemo-Orientation", 2);
-//#endif
+  setProperty("X-Maemo-Orientation", 2);
+
   QPixmap p_theme_irssi(":general_settings.png");
   ui->lbl_image->setPixmap(p_theme_irssi);
 
