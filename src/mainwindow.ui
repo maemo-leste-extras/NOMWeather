@@ -42,20 +42,14 @@
     <property name="title">
      <string>w00t</string>
     </property>
-    <addaction name="actionAbout"/>
-    <addaction name="actionExit"/>
     <addaction name="actionSettings"/>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuw00t"/>
   </widget>
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
-   </property>
-  </action>
-  <action name="actionExit">
-   <property name="text">
-    <string>Exit</string>
    </property>
   </action>
   <action name="actionSettings">

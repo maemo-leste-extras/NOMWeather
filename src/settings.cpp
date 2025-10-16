@@ -19,6 +19,7 @@ Settings::Settings(AppContext *ctx, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Settings),
     m_ctx(ctx) {
+  setProperty("X-Maemo-StackedWindow", 1);
   pSettings = this;
   ui->setupUi(this);
   ui->cityLabel->hide();

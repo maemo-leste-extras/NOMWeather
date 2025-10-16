@@ -25,10 +25,22 @@ It registers a startup item and can be launched from the menu.
 
 ### Compile
 
+You can install build-dependencies using:
+
+```text
+sudo apt build-dep nomweather
+```
+
+And install additional run-time dependencies using:
+
+```text
+sudo apt install qml-module-qtcharts
+```
+
 The following command assumes you satisfy the Qt5 depedencies neccesary:
 
 ```text
-cmake -Bbuild .
+cmake -Bbuild . -DCMAKE_BUILD_TYPE=Debug
 make -Cbuild -j2
 ./build/bin/nomweather
 ```

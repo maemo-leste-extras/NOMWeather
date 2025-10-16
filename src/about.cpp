@@ -18,6 +18,7 @@ About::About(AppContext *ctx, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::About),
     m_ctx(ctx) {
+  setProperty("X-Maemo-StackedWindow", 1);
   pAbout = this;
   ui->setupUi(this);
   QPixmap p_theme_irssi(":general_settings.png");
