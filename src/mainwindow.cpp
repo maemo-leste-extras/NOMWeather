@@ -6,6 +6,7 @@ MainWindow::MainWindow(AppContext *ctx, QWidget *parent) :
     m_ctx(ctx),
     ui(new Ui::MainWindow)
 {
+  setProperty("X-Maemo-StackedWindow", 1);
   ui->setupUi(this);
 #ifdef MAEMO
   this->ui->menuBar->hide();
@@ -22,7 +23,6 @@ MainWindow::MainWindow(AppContext *ctx, QWidget *parent) :
 
   connect(ui->actionSettings, &QAction::triggered, this, &MainWindow::onOpenSettingsWindow);
   connect(ui->actionAbout, &QAction::triggered, this, &MainWindow::onOpenAboutWindow);
-  connect(ui->actionExit, &QAction::triggered, this, &MainWindow::onQuitApplication);
 
   // example set config value
   // config()->set(ConfigKeys::Test, "test2");
