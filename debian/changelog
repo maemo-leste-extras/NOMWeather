@@ -1,3 +1,10 @@
+nomweather (0.2.2) unstable; urgency=medium
+
+  * Set about and settings windows as stackable
+  * Add build workflow
+
+ -- Sander <sander@kroket.io>  Thu, 16 Oct 2025 18:28:16 +0300
+
 nomweather (0.2.1) unstable; urgency=medium
 
   * window: allow portrait
