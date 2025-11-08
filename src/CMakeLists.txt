@@ -189,6 +189,7 @@ qt6_add_qml_module(Main
             assets/Glance/two_gray_clouds.png
             assets/Glance/two_light_clouds.png
             assets/Glance/wind.png
+            assets/general_settings.png
         QML_FILES
             qml/AreaFlick.qml
             qml/DayItem.qml

@@ -8,6 +8,7 @@ MainWindow::MainWindow(AppContext *ctx, QWidget *parent) :
 {
   setProperty("X-Maemo-StackedWindow", 1);
   ui->setupUi(this);
+  ui->menuBar->hide();
 
   this->screenDpiRef = 128;
   this->screenGeo = QApplication::primaryScreen()->availableGeometry();
