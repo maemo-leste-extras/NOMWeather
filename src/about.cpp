@@ -21,7 +21,7 @@ About::About(AppContext *ctx, QWidget *parent) :
   setProperty("X-Maemo-StackedWindow", 1);
   pAbout = this;
   ui->setupUi(this);
-  QPixmap p_theme_irssi("qrc:/Main/assets/general_settings.png");
+  QPixmap p_theme_irssi(":/Main/assets/general_settings.png");
   ui->lbl_image->setPixmap(p_theme_irssi);
 
   setProperty("X-Maemo-Orientation", 2);

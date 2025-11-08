@@ -18,7 +18,7 @@ file(GLOB SOURCE_FILES
 
 # Find Qt. Use a CMake definition to point it to your Qt installation
 # location (if necessary), e.g: -DCMAKE_PREFIX_PATH=/home/user/Qt/5.15.2/gcc_64
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Gui QuickWidgets Charts Network Svg Xml Sql QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Gui QuickWidgets Charts Network Svg Xml QuickControls2)
 
 set(EXECUTABLE_FLAG)
 

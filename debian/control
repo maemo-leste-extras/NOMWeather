@@ -13,9 +13,7 @@ Build-Depends: debhelper (>= 10),
     qt6-svg-dev,
     qt6-charts-dev,
     qt6-multimedia-dev,
-    qt6-webengine-dev,
-    qt6-sql-sqlite,
-    libqt6sql6-sqlite
+    qt6-webengine-dev
 Homepage: https://github.com/maemo-leste-extras/nomweather
 XSBC-Bugtracker: https://github.com/maemo-leste-extras/nomweather/issues
 Vcs-Git: https://github.com/maemo-leste-extras/nomweather/
