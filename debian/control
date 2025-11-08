@@ -29,11 +29,9 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
     libqt6quickcontrols2impl6,
     libqt6network6,
     qml6-module-qtcharts,
-    qml6-module-qtquick-controls2,
-    qml6-module-qtquick2,
+    qml6-module-qtquick,
     qml6-module-qtquick-layouts,
     qml6-module-qtquick-controls,
-    qml6-module-qtquick-extras,
     qml6-module-qtquick-dialogs
 Description: Maemo Leste weather forecast app
 XB-Maemo-Display-Name: Maemo Weather
