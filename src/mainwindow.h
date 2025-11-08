@@ -16,6 +16,10 @@
 #include <QQueue>
 #include <QThread>
 #include <QMutex>
+#include <QtCharts/QAbstractAxis>
+#include <QtCharts/QChart>
+#include <QtCharts/QLineSeries>
+#include <QtCharts/QValueAxis>
 
 #include "ctx.h"
 #include "about.h"
@@ -53,7 +57,7 @@ public:
 
   Q_INVOKABLE void silly_animation(QLineSeries *series);
   Q_INVOKABLE void nuke_chart_background(QQuickItem *item);
-  Q_INVOKABLE void nuke_axes(QtCharts::QAbstractAxis *axisX, QtCharts::QAbstractAxis *axisY);
+  Q_INVOKABLE void nuke_axes(QAbstractAxis *axisX, QAbstractAxis *axisY);
   Q_INVOKABLE void update_series(QAreaSeries *series, QVariantList list, QString graphType);
 
 public slots:

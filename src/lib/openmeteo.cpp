@@ -242,9 +242,9 @@ QString OpenMeteo::WMO2Icon(int wmo) {
   map[99] = "4";
 
   if(map.contains(wmo)) {
-    return "qrc:///weather/" + map[wmo] + ".png";
+    return map[wmo] + ".png";
   } else {
-    return "qrc:///weather/na.png";
+    return "na.png";
   }
 }
 

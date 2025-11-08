@@ -1,10 +1,9 @@
-import QtQuick 2.0
-import QtCharts 2.0
-import QtGraphicalEffects 1.15
-import QtQuick.Controls 2.0
-import QtQuick.Controls.Styles 1.4
-import QtQuick.Layouts 1.1
-import QtQuick.Dialogs 1.2
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Dialogs
+import QtCharts
+
+import "."
 
 Rectangle {
     id: root
@@ -91,7 +90,7 @@ Rectangle {
         root.metaPrecStr.text = "Precipitation: " + obj.precipitation_probability + "%";
         root.metaWindStr.text = "Wind: " + obj.windspeed_kmph + " km/h";
         root.metaLocationStr.text = openMeteo.data.name + ", " + openMeteo.data.country;
-        root.metaIcon.source = openMeteo.WMO2Icon(obj.wmo);
+        root.metaIcon.source = "qrc:/Main/assets/Glance/" + openMeteo.WMO2Icon(obj.wmo);
     }
 
     ColumnLayout {
@@ -135,7 +134,7 @@ Rectangle {
                             id: metaIcon
                             Layout.preferredHeight: tempHeaderContainer.itemHeight
                             Layout.preferredWidth: tempHeaderContainer.itemHeight
-                            source: "qrc:///weather/na.png"
+                            source: "qrc:/Main/assets/Glance/na.png"
                             fillMode: Image.PreserveAspectFit
                         }
 
@@ -540,7 +539,7 @@ Rectangle {
                 Layout.fillHeight: true
                 title: "-"
                 temp: "0"
-                img: "qrc:///weather/na.png"
+                img: "qrc:/Main/assets/Glance/na.png"
                 isActive: true
                 onClicked: daysContainer.makeActive(0);
             }
@@ -552,7 +551,7 @@ Rectangle {
                 Layout.fillHeight: true
                 title: "-"
                 temp: "0"
-                img: "qrc:///weather/na.png"
+                img: "qrc:/Main/assets/Glance/na.png"
                 onClicked: daysContainer.makeActive(1);
             }
 
@@ -563,7 +562,7 @@ Rectangle {
                 Layout.fillHeight: true
                 title: "-"
                 temp: "0"
-                img: "qrc:///weather/na.png"
+                img: "qrc:/Main/assets/Glance/na.png"
                 onClicked: daysContainer.makeActive(2);
             }
 
@@ -574,7 +573,7 @@ Rectangle {
                 Layout.fillHeight: true
                 title: "-"
                 temp: "0"
-                img: "qrc:///weather/na.png"
+                img: "qrc:/Main/assets/Glance/na.png"
                 onClicked: daysContainer.makeActive(3);
             }
 
@@ -585,7 +584,7 @@ Rectangle {
                 Layout.fillHeight: true
                 title: "-"
                 temp: "0"
-                img: "qrc:///weather/na.png"
+                img: "qrc:/Main/assets/Glance/na.png"
                 onClicked: daysContainer.makeActive(4);
             }
 
@@ -596,7 +595,7 @@ Rectangle {
                 Layout.fillHeight: true
                 title: "-"
                 temp: "0"
-                img: "qrc:///weather/na.png"
+                img: "qrc:/Main/assets/Glance/na.png"
                 onClicked: daysContainer.makeActive(5);
             }
 
@@ -607,7 +606,7 @@ Rectangle {
                 Layout.fillHeight: true
                 title: "-"
                 temp: "0"
-                img: "qrc:///weather/na.png"
+                img: "qrc:/Main/assets/Glance/na.png"
                 onClicked: daysContainer.makeActive(6);
             }
         }

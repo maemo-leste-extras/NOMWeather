@@ -13,10 +13,9 @@ Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
 #include "ctx.h"
 
 int main(int argc, char *argv[]) {
-  Q_INIT_RESOURCE(assets);
+  qDebug() << "Qt version:" << qVersion();
 
   qputenv("QML_DISABLE_DISK_CACHE", "1");
-  QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
   QApplication::setApplicationName("nomweather");
   QApplication::setOrganizationDomain("kroket.io");
   QApplication::setOrganizationName("Kroket Ltd.");
@@ -28,6 +27,10 @@ int main(int argc, char *argv[]) {
   auto *ctx = new AppContext();
   ctx->isDebug = false;
   auto *mainWindow = new MainWindow(ctx);
+
+  // QDirIterator qrc(":", QDirIterator::Subdirectories);
+  // while(qrc.hasNext())
+  //   qDebug() << qrc.next();
 
   return QApplication::exec();
 }

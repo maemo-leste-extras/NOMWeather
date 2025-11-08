@@ -1,8 +1,7 @@
-import QtQuick 2.0
-import QtQuick.Controls 2.0
-import QtQuick.Controls.Styles 1.4
-import QtQuick.Layouts 1.1
-import QtQuick.Dialogs 1.2
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Dialogs
+import QtCharts
 
 Rectangle {
     id: root
@@ -50,7 +49,7 @@ Rectangle {
             Layout.preferredWidth: parent.parent.customWidth
             Layout.fillHeight: true
             Layout.alignment: Qt.AlignHCenter
-            source: root.img
+            source: root.img.startsWith("qrc") ? root.img : "qrc:/Main/assets/Glance/" + root.img
             fillMode: Image.PreserveAspectFit
         }
 

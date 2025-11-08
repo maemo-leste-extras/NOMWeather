@@ -3,21 +3,19 @@ Section: user/navigation
 Priority: extra
 Maintainer: Sander <sander@kroket.io>
 Build-Depends: debhelper (>= 10),
-    qtbase5-dev,
+    qt6-base-dev,
     ccache,
     cmake,
     libx11-dev,
     zlib1g-dev,
     libpng-dev,
-    libqt5svg5-dev,
-    libqt5maemo5-dev,
-    libqt5x11extras5-dev,
-    libqt5charts5-dev,
-    qtmultimedia5-dev,
-    libqt5network5,
-    qtquickcontrols2-5-dev,
-    qtdeclarative5-dev,
-    qtdeclarative5-dev-tools
+    libssl-dev,
+    qt6-svg-dev,
+    qt6-charts-dev,
+    qt6-multimedia-dev,
+    qt6-webengine-dev,
+    qt6-sql-sqlite,
+    libqt6sql6-sqlite
 Homepage: https://github.com/maemo-leste-extras/nomweather
 XSBC-Bugtracker: https://github.com/maemo-leste-extras/nomweather/issues
 Vcs-Git: https://github.com/maemo-leste-extras/nomweather/
@@ -27,16 +25,17 @@ Vcs-Browser: https://github.com/maemo-leste-extras/nomweather/
 Package: nomweather
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-    libqt5quickcontrols2-5,
-    libqt5network5,
-    libqt5charts5,
-    qml-module-qtcharts,
-    qml-module-qtquick-controls2,
-    qml-module-qtquick2,
-    qml-module-qtquick-layouts,
-    qml-module-qtquick-controls,
-    qml-module-qtquick-extras,
-    qml-module-qtquick-dialogs,
-    qml-module-qtquick-controls
+    libqt6chartsqml6,
+    libqt6charts6,
+    libqt6quickcontrols2-6,
+    libqt6quickcontrols2impl6,
+    libqt6network6,
+    qml6-module-qtcharts,
+    qml6-module-qtquick-controls2,
+    qml6-module-qtquick2,
+    qml6-module-qtquick-layouts,
+    qml6-module-qtquick-controls,
+    qml6-module-qtquick-extras,
+    qml6-module-qtquick-dialogs
 Description: Maemo Leste weather forecast app
 XB-Maemo-Display-Name: Maemo Weather

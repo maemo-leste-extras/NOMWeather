@@ -8,9 +8,6 @@ MainWindow::MainWindow(AppContext *ctx, QWidget *parent) :
 {
   setProperty("X-Maemo-StackedWindow", 1);
   ui->setupUi(this);
-#ifdef MAEMO
-  this->ui->menuBar->hide();
-#endif
 
   this->screenDpiRef = 128;
   this->screenGeo = QApplication::primaryScreen()->availableGeometry();
@@ -70,7 +67,7 @@ void MainWindow::createQml() {
   qctx->setContextProperty("openMeteo", m_ctx->openMeteo);
   qctx->setContextProperty("mainWindow", this);
 
-  m_quickWidget->setSource(QUrl("qrc:/qml/main.qml"));
+  m_quickWidget->setSource(QUrl("qrc:/Main/qml/Main.qml"));
   m_quickWidget->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
   connect((QObject*)m_quickWidget->rootObject(), SIGNAL(onExample(int)), this, SLOT(onExample(int)));
@@ -90,7 +87,7 @@ Q_INVOKABLE void MainWindow::nuke_chart_background(QQuickItem *item) {
   // https://stackoverflow.com/questions/59007984/customize-or-define-new-qml-chartview-theme
   if(auto *scene = item->findChild<QGraphicsScene *>()){
     for(QGraphicsItem *it : scene->items()) {
-      if(auto *chart = dynamic_cast<QtCharts::QChart *>(it)){
+      if(auto *chart = dynamic_cast<QChart *>(it)){
         // Customize chart background
         chart->setBackgroundBrush(Qt::transparent);
         chart->layout()->setContentsMargins(0, 0, 0, 0);
@@ -147,7 +144,7 @@ Q_INVOKABLE void MainWindow::update_series(QAreaSeries *series, QVariantList lis
   series->setPointLabelsFont(bla);
 }
 
-Q_INVOKABLE void MainWindow::nuke_axes(QtCharts::QAbstractAxis *axisX, QtCharts::QAbstractAxis *axisY) {
+Q_INVOKABLE void MainWindow::nuke_axes(QAbstractAxis *axisX, QAbstractAxis *axisY) {
   axisX->hide();
   axisX->setGridLineColor(Qt::transparent);
   axisX->setLabelsColor(Qt::white);

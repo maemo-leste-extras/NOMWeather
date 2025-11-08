@@ -18,9 +18,7 @@ file(GLOB SOURCE_FILES
 
 # Find Qt. Use a CMake definition to point it to your Qt installation
 # location (if necessary), e.g: -DCMAKE_PREFIX_PATH=/home/user/Qt/5.15.2/gcc_64
-find_package(Qt5 REQUIRED COMPONENTS Core Widgets Gui Charts Network DBus Svg Xml Quick QuickWidgets Qml QuickControls2 QuickCompiler)
-
-qtquick_compiler_add_resources(RESOURCES assets.qrc)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Gui QuickWidgets Charts Network Svg Xml Sql QuickControls2)
 
 set(EXECUTABLE_FLAG)
 
@@ -48,20 +46,20 @@ endif()
 
 set_property(TARGET nomweather PROPERTY RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
-target_include_directories(nomweather PUBLIC ${Qt5Gui_PRIVATE_INCLUDE_DIRS})
+target_include_directories(nomweather PUBLIC ${Qt6Gui_PRIVATE_INCLUDE_DIRS})
 
 target_include_directories(nomweather PUBLIC
         ${CMAKE_SOURCE_DIR}/src
         ${X11_INCLUDE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}
-        ${Qt5Core_INCLUDE_DIRS}
-        ${Qt5Widgets_INCLUDE_DIRS}
-        ${Qt5Gui_INCLUDE_DIRS}
-        ${Qt5Network_INCLUDE_DIRS}
-        ${Qt5Svg_INCLUDE_DIRS}
-        ${Qt5Xml_INCLUDE_DIRS}
-        ${Qt5WebSockets_INCLUDE_DIRS}
-        ${Qt5Charts_PRIVATE_INCLUDE_DIRS}
+        ${Qt6Core_INCLUDE_DIRS}
+        ${Qt6Widgets_INCLUDE_DIRS}
+        ${Qt6Gui_INCLUDE_DIRS}
+        ${Qt6Network_INCLUDE_DIRS}
+        ${Qt6Svg_INCLUDE_DIRS}
+        ${Qt6Xml_INCLUDE_DIRS}
+        ${Qt6WebSockets_INCLUDE_DIRS}
+        ${Qt6Charts_PRIVATE_INCLUDE_DIRS}
         )
 
 add_definitions(${QT_DEFINITIONS})
@@ -80,59 +78,136 @@ endif()
 
 target_compile_definitions(nomweather
         PUBLIC
-        ${Qt5Core_DEFINITIONS}
-        ${Qt5Widgets_DEFINITIONS}
-        ${Qt5Gui_DEFINITIONS}
-        ${Qt5Network_DEFINITIONS}
-        ${Qt5Svg_DEFINITIONS}
-        ${Qt5Xml_DEFINITIONS}
-        ${Qt5WebSockets_DEFINITIONS}
+        ${Qt6Core_DEFINITIONS}
+        ${Qt6Widgets_DEFINITIONS}
+        ${Qt6Gui_DEFINITIONS}
+        ${Qt6Network_DEFINITIONS}
+        ${Qt6Svg_DEFINITIONS}
+        ${Qt6Xml_DEFINITIONS}
+        ${Qt6WebSockets_DEFINITIONS}
         )
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt6Widgets_EXECUTABLE_COMPILE_FLAGS}")
 
 target_link_libraries(nomweather PUBLIC
         ${CMAKE_DL_LIBS}
-        Qt5::Core
-        Qt5::Widgets
-        Qt5::Gui
-        Qt5::Network
-        Qt5::Charts
-        Qt5::Svg
-        Qt5::QSvgPlugin
-        Qt5::QSvgIconPlugin
-        Qt5::Xml
-        Qt5::Quick
-        Qt5::QuickWidgets
-        Qt5::Qml
-        Qt5::QuickControls2
+        Qt6::Core
+        Qt6::Widgets
+        Qt6::Gui
+        Qt6::Network
+        Qt6::Charts
+        Qt6::Xml
+        Qt6::Quick
+        Qt6::QuickWidgets
+        Qt6::Qml
+        Qt6::QuickControls2
+        ${X11_LIBRARIES}
         Threads::Threads
 )
 
-if(NOT APPLE)
-    target_link_libraries(nomweather PUBLIC
-            Qt5::QSvgIconPlugin
-            Qt5::QSvgPlugin
-            )
-endif()
-
-if(STATIC)
-    target_link_libraries(nomweather PUBLIC
-            Qt5::QSvgIconPlugin
-            Qt5::QSvgPlugin)
-    if(UNIX AND NOT APPLE)
-        target_link_libraries(nomweather PUBLIC
-                Qt5::QXcbIntegrationPlugin)
-    endif()
-endif()
-
-if(X11_FOUND)
-    target_link_libraries(nomweather PUBLIC ${X11_LIBRARIES})
-endif()
-
-if(APPLE)
-    include(Deploy)
-endif()
+qt6_add_qml_module(Main
+        STATIC
+        URI Main
+        VERSION 1.0
+        OUTPUT_DIRECTORY qml_main
+        RESOURCE_PREFIX ""
+        RESOURCES
+            assets/Glance/0.png
+            assets/Glance/10.png
+            assets/Glance/11.png
+            assets/Glance/12.png
+            assets/Glance/13.png
+            assets/Glance/14.png
+            assets/Glance/15.png
+            assets/Glance/16.png
+            assets/Glance/17.png
+            assets/Glance/18.png
+            assets/Glance/19.png
+            assets/Glance/1.png
+            assets/Glance/20.png
+            assets/Glance/21.png
+            assets/Glance/22.png
+            assets/Glance/23.png
+            assets/Glance/24.png
+            assets/Glance/25.png
+            assets/Glance/26.png
+            assets/Glance/27.png
+            assets/Glance/28.png
+            assets/Glance/29.png
+            assets/Glance/2.png
+            assets/Glance/30.png
+            assets/Glance/31.png
+            assets/Glance/32.png
+            assets/Glance/33.png
+            assets/Glance/34.png
+            assets/Glance/35.png
+            assets/Glance/36.png
+            assets/Glance/37.png
+            assets/Glance/38.png
+            assets/Glance/39.png
+            assets/Glance/3.png
+            assets/Glance/40.png
+            assets/Glance/41.png
+            assets/Glance/42.png
+            assets/Glance/43.png
+            assets/Glance/44a.png
+            assets/Glance/44.png
+            assets/Glance/45.png
+            assets/Glance/46.png
+            assets/Glance/47.png
+            assets/Glance/48.png
+            assets/Glance/4.png
+            assets/Glance/5.png
+            assets/Glance/6.png
+            assets/Glance/7.png
+            assets/Glance/8.png
+            assets/Glance/9.png
+            assets/Glance/dark_cloud.png
+            assets/Glance/dropice.png
+            assets/Glance/drop.png
+            assets/Glance/dust.png
+            assets/Glance/fog.png
+            assets/Glance/fulllight.png
+            assets/Glance/gray_cloud.png
+            assets/Glance/haze.png
+            assets/Glance/hotsun.png
+            assets/Glance/ice_cloud.png
+            assets/Glance/iceshatter.png
+            assets/Glance/light_cloud.png
+            assets/Glance/light.png
+            assets/Glance/medium_gray_cloud.png
+            assets/Glance/moon4.png
+            assets/Glance/na.png
+            assets/Glance/shatter.png
+            assets/Glance/small_gray_cloud.png
+            assets/Glance/smoke.png
+            assets/Glance/snowflake_light.png
+            assets/Glance/snowflake.png
+            assets/Glance/sun.png
+            assets/Glance/transparency_cloud.png
+            assets/Glance/two_gray_cloud.png
+            assets/Glance/two_gray_clouds.png
+            assets/Glance/two_light_clouds.png
+            assets/Glance/wind.png
+        QML_FILES
+            qml/AreaFlick.qml
+            qml/DayItem.qml
+            qml/Main.qml
+)
+target_link_libraries(
+        Main PRIVATE
+        Qt6::Core
+        Qt6::Widgets
+        Qt6::Gui
+        Qt6::Network
+        Qt6::Charts
+        Qt6::Xml
+        Qt6::Quick
+        Qt6::QuickWidgets
+        Qt6::Qml
+        Qt6::QuickControls2
+)
+target_link_libraries(nomweather PRIVATE Mainplugin)
 
 install(TARGETS nomweather
         DESTINATION bin
