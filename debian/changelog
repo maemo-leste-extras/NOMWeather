@@ -1,3 +1,9 @@
+nomweather (0.3.4) unstable; urgency=medium
+
+  * qt6: force gles, add maemo Qt plugins deps
+
+ -- Sander <sander@kroket.io>  Thu, 8 Nov 2025 18:38:16 +0300
+
 nomweather (0.3.3) unstable; urgency=medium
 
   * debian/control: remove some runtime Qt deps, update to 0.3.3
