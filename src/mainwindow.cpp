@@ -71,7 +71,7 @@ void MainWindow::createQml() {
   m_quickWidget->setSource(QUrl("qrc:/Main/qml/Main.qml"));
   m_quickWidget->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
-  connect((QObject*)m_quickWidget->rootObject(), SIGNAL(onExample(int)), this, SLOT(onExample(int)));
+  // connect((QObject*)m_quickWidget->rootObject(), SIGNAL(onExample(int)), this, SLOT(onExample(int)));
   ui->centralWidget->layout()->addWidget(m_quickWidget);
 
   //onOpenSettingsWindow();

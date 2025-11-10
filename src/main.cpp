@@ -34,9 +34,9 @@ int main(int argc, char *argv[]) {
   ctx->isDebug = false;
   auto *mainWindow = new MainWindow(ctx);
 
-  QDirIterator qrc(":", QDirIterator::Subdirectories);
-  while(qrc.hasNext())
-    qDebug() << qrc.next();
+  // QDirIterator qrc(":", QDirIterator::Subdirectories);
+  // while(qrc.hasNext())
+  //  qDebug() << qrc.next();
 
   return QApplication::exec();
 }
