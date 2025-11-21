@@ -2,7 +2,7 @@
 Name=Weather
 GenericName=Weather
 Exec=nomweather
-Icon=control_language
+Icon=/usr/share/nomweather/nomweather.png
 Terminal=false
 Type=Application
 Categories=Utility;
