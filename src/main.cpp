@@ -15,7 +15,6 @@ Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
 int main(int argc, char *argv[]) {
   qDebug() << "Qt version:" << qVersion();
 
-  qputenv("QML_DISABLE_DISK_CACHE", "1");
   qputenv("FORCE_GLES", "1");
   qputenv("QT_STYLE_OVERRIDE", QByteArray("maemo5"));
   qputenv("QT_QPA_PLATFORMTHEME", QByteArray("maemo5"));

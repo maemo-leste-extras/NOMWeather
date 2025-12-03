@@ -1,3 +1,9 @@
+nomweather (0.3.7) unstable; urgency=medium
+
+  * main: remove QML disk cache, bump to 0.3.7
+
+ -- Sander <sander@kroket.io>  Thu, 4 Dec 2025 00:38:16 +0300
+
 nomweather (0.3.6) unstable; urgency=medium
 
   * debian/control: update icon
