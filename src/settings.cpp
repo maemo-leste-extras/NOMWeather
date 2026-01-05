@@ -87,10 +87,42 @@ void Settings::onCitiesReceived(QVariantList arr) {
   config()->set(ConfigKeys::SettingsLocationLat, lat);
   config()->set(ConfigKeys::SettingsLocationLon, lon);
 
+  writeGSettings();
+
   auto lblText = Settings::formatCityLabel(city, country, lat, lon);
   ui->cityLabel->setText(lblText);
   dirty = true;
 }
+
+// write to GSettings via QProcess
+// not using `libgsettings-qt6-dev`, as the schema
+// is part of nomweather-home-widget
+void Settings::writeGSettings() {
+  QString choice = config()->get(ConfigKeys::SettingsLocationChoice).toString();
+  if(choice != "manual") {
+    choice = "auto";
+  }
+
+  QString name = config()->get(ConfigKeys::SettingsLocationName).toString();
+  QString lat = config()->get(ConfigKeys::SettingsLocationLat).toString();
+  QString lon = config()->get(ConfigKeys::SettingsLocationLon).toString();
+
+  auto run = [](const QStringList &args) {
+    QProcess p;
+    p.start("gsettings", args);
+    p.waitForFinished(-1);
+  };
+
+  run({ "set", "org.nomweather.location", "location-choice", choice });
+  run({ "set", "org.nomweather.location", "location-name", name });
+  run({ "set", "org.nomweather.location", "location-lat", lat });
+  run({ "set", "org.nomweather.location", "location-lon", lon });
+
+  QFile f("/tmp/nomweather.update");
+  f.open(QIODevice::WriteOnly);
+  f.close();
+}
+
 
 void Settings::onCityTextChanged(const QString &inp) {
   if(inp.isEmpty()) {

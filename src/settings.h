@@ -26,6 +26,7 @@ class Settings : public QMainWindow {
 public:
   explicit Settings(AppContext *ctx, QWidget *parent = nullptr);
   static AppContext *getContext();
+  static void writeGSettings();
   ~Settings() override;
   Ui::Settings *ui;
 

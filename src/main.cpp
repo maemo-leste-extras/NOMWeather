@@ -15,12 +15,6 @@ Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
 int main(int argc, char *argv[]) {
   qDebug() << "Qt version:" << qVersion();
 
-  qputenv("FORCE_GLES", "1");
-  qputenv("QT_STYLE_OVERRIDE", QByteArray("maemo5"));
-  qputenv("QT_QPA_PLATFORMTHEME", QByteArray("maemo5"));
-  qputenv("QT_QPA_PLATFORM", QByteArray("maemo"));
-  qputenv("QT_XCB_GL_INTEGRATION", QByteArray("xcb_maemo_egl"));
-
   QApplication::setApplicationName("nomweather");
   QApplication::setOrganizationDomain("kroket.io");
   QApplication::setOrganizationName("Kroket Ltd.");

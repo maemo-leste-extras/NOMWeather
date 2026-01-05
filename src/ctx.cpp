@@ -5,6 +5,8 @@
 #include <QStandardPaths>
 
 #include "ctx.h"
+
+#include "settings.h"
 #include "lib/utils.h"
 
 using namespace std::chrono;
@@ -33,6 +35,8 @@ AppContext::AppContext() {
   m_weatherTimer->setInterval(1000 * 2);
   m_weatherTimer->start();
   this->onWeatherTimer();
+
+  Settings::writeGSettings();
 }
 
 void AppContext::onWeatherUpdated() {
