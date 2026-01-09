@@ -1,3 +1,9 @@
+nomweather (0.3.10) unstable; urgency=medium
+
+  * debian/control: libqt6quickcontrols2impl6 is replaced by qml6-module-qtquick-controls libqt6quickcontrols2-6
+
+ -- Sander <sander@kroket.io>  Fri, 9 Jan 2026 13:31:16 +0300
+
 nomweather (0.3.9) unstable; urgency=medium
 
   * debian/control: libqt6chartsqml6 is replaced by qml6-module-qtcharts
