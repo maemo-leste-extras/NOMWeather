@@ -23,7 +23,6 @@ Vcs-Browser: https://github.com/maemo-leste-extras/nomweather/
 Package: nomweather
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-    libqt6chartsqml6,
     libqt6charts6,
     libqt6quickcontrols2-6,
     libqt6quickcontrols2impl6,
