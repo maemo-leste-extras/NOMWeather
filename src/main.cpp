@@ -2,6 +2,7 @@
 #include <QResource>
 #include <QtCore>
 #include <QSslSocket>
+#include <QSurfaceFormat>
 
 #if defined(Q_OS_LINUX) && defined(STATIC)
 Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
@@ -14,6 +15,12 @@ Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
 
 int main(int argc, char *argv[]) {
   qDebug() << "Qt version:" << qVersion();
+
+  QSurfaceFormat fmt;
+  fmt.setRenderableType(QSurfaceFormat::OpenGLES);
+  fmt.setVersion(2, 0);
+  fmt.setProfile(QSurfaceFormat::NoProfile);
+  QSurfaceFormat::setDefaultFormat(fmt);
 
   QApplication::setApplicationName("nomweather");
   QApplication::setOrganizationDomain("kroket.io");
