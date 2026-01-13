@@ -17,9 +17,10 @@ int main(int argc, char *argv[]) {
   qDebug() << "Qt version:" << qVersion();
 
   QSurfaceFormat fmt;
+  fmt.setProfile(QSurfaceFormat::CompatibilityProfile);
   fmt.setRenderableType(QSurfaceFormat::OpenGLES);
-  fmt.setVersion(2, 0);
-  fmt.setProfile(QSurfaceFormat::NoProfile);
+  fmt.setDepthBufferSize(24);
+  fmt.setStencilBufferSize(8);
   QSurfaceFormat::setDefaultFormat(fmt);
 
   QApplication::setApplicationName("nomweather");

@@ -1,3 +1,9 @@
+nomweather (0.3.12) unstable; urgency=medium
+
+  * main: set QSurfaceFormat v2
+
+ -- Sander <sander@kroket.io>  Tue, 13 Jan 2026 20:14:16 +0300
+
 nomweather (0.3.11) unstable; urgency=medium
 
   * main: set QSurfaceFormat
