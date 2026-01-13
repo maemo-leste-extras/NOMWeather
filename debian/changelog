@@ -1,3 +1,9 @@
+nomweather (0.3.11) unstable; urgency=medium
+
+  * main: set QSurfaceFormat
+
+ -- Sander <sander@kroket.io>  Tue, 13 Jan 2026 20:14:16 +0300
+
 nomweather (0.3.10) unstable; urgency=medium
 
   * debian/control: libqt6quickcontrols2impl6 is replaced by qml6-module-qtquick-controls libqt6quickcontrols2-6
